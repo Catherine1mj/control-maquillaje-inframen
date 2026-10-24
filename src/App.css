@@ -1,0 +1,282 @@
+/* Diseño propio de Glamour Makeup */
+.beauty-header {
+  text-align: center;
+  padding: 24px 16px 30px;
+  margin-bottom: 26px;
+  color: #54283d;
+}
+
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  color: #963f65;
+  background: #f5dce6;
+  font-size: 25px;
+}
+
+.eyebrow,
+.section-kicker {
+  margin: 0 0 8px;
+  color: #a15b7b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.2px;
+}
+
+.beauty-header h1 {
+  margin: 0;
+  color: #843858;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.header-subtitle {
+  margin: 10px 0 0;
+  color: #795366;
+  font-size: 16px;
+}
+
+.header-line {
+  width: 74px;
+  height: 3px;
+  margin: 22px auto 0;
+  border-radius: 99px;
+  background: #d5ad72;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #54283d;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
+  font-weight: 600;
+}
+
+.section-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  background: #fbecf1;
+  font-size: 24px;
+}
+
+.product-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 4px;
+}
+
+.primary-button,
+.secondary-button,
+.edit-button,
+.delete-button {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+}
+
+.primary-button {
+  padding: 12px 20px;
+  color: #fff;
+  background: #963f65;
+  box-shadow: 0 6px 14px rgba(150, 63, 101, .2);
+}
+
+.secondary-button {
+  color: #66364d;
+  background: #f4e7ed;
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.edit-button:hover,
+.delete-button:hover {
+  transform: translateY(-1px);
+  opacity: .9;
+}
+
+.inventory-heading {
+  margin-bottom: 18px;
+}
+
+.inventory-count {
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border: 1px solid #efd5df;
+  border-radius: 99px;
+  color: #843858;
+  background: #fff6f9;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.empty-state {
+  padding: 36px 16px;
+  border: 1px dashed #e7bfd0;
+  border-radius: 16px;
+  background: #fffafd;
+  text-align: center;
+}
+
+.empty-state > span {
+  font-size: 32px;
+}
+
+.empty-state h3 {
+  margin: 12px 0 6px;
+  color: #843858;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.empty-state p {
+  margin: 0;
+  color: #8a6b7b;
+  font-size: 14px;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #f0dce4;
+  border-radius: 14px;
+}
+
+.inventory-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 13px;
+}
+
+.inventory-table thead {
+  color: #fff;
+  background: #843858;
+  text-align: left;
+}
+
+.inventory-table th {
+  padding: 14px 12px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .3px;
+  white-space: nowrap;
+}
+
+.inventory-table td {
+  padding: 13px 12px;
+  border-bottom: 1px solid #f3e5eb;
+  color: #674255;
+}
+
+.inventory-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.inventory-table tbody tr:hover {
+  background: #fff8fb;
+}
+
+.product-code {
+  color: #a15b7b;
+  font-weight: 800;
+}
+
+.product-name {
+  color: #54283d !important;
+  font-weight: 750;
+}
+
+.stock-pill {
+  display: inline-block;
+  min-width: 34px;
+  padding: 5px 9px;
+  border-radius: 99px;
+  color: #6e4b22;
+  background: #f8edda;
+  text-align: center;
+  font-weight: 800;
+}
+
+.actions-cell {
+  white-space: nowrap;
+}
+
+.edit-button {
+  margin-right: 6px;
+  color: #774b19;
+  background: #f8edda;
+}
+
+.delete-button {
+  color: #9a3652;
+  background: #fbe5eb;
+}
+
+.app-footer {
+  padding: 10px 16px 0;
+  color: #8a6176;
+  text-align: center;
+  font-size: 12px;
+}
+
+.app-footer > span {
+  color: #b88b4a;
+  margin-right: 5px;
+}
+
+.app-footer p {
+  margin: 8px auto 0;
+  max-width: 700px;
+  line-height: 1.6;
+  color: #967d8a;
+}
+
+@media (max-width: 650px) {
+  .product-form {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+  }
+
+  .inventory-count {
+    font-size: 11px;
+  }
+
+  .beauty-header {
+    padding-top: 10px;
+  }
+}
