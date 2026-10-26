@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
@@ -276,7 +277,7 @@ function App() {
 
       <footer className="app-footer">
         <span>✦</span> Glamour Makeup · Gestión de productos de belleza
-        <p>Demostración local: los datos se guardan en este navegador y no se sincronizan automáticamente con otros dispositivos.</p>
+        <p></p>
       </footer>
     </main>
   );
